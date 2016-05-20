@@ -10,17 +10,31 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.tera.rxthreaddemo.MainActivity">
 
-    <TextView
-        android:id="@+id/textViewTime"
+    <include
+        layout="@layout/inc_time"
         android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/buttonMain1"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="right"
-        android:text="---"
+        android:padding="5dp"
+        android:text="Clock and data"
         android:textColor="@android:color/black"
         android:textSize="18sp" />
 
-    <TextView
-        android:id="@+id/textView1"
+    <Button
+        android:id="@+id/buttonMain2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="Fetch data"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="5dp"
@@ -28,26 +42,8 @@
         android:textColor="@android:color/black"
         android:textSize="18sp" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="5dp"
-        android:text="---"
-        android:textColor="@android:color/black"
-        android:textSize="18sp" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="5dp"
-        android:text="---"
-        android:textColor="@android:color/black"
-        android:textSize="18sp" />
-
-    <TextView
-        android:id="@+id/textView4"
+    <Button
+        android:id="@+id/button4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="5dp"
